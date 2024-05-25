@@ -13,11 +13,10 @@ def loading(qnt, delay):
 print(Style.RESET_ALL)
 print(Fore.RED)
 print(Back.BLACK + "ATENÇÃO:")
-print("[1] TENHA CERTEZA DE DIGITAR O CAMINHO DE DESTINO E O TIPO DE ARQUIVO CORRETAMENTE(INCLUI-SE PONTUAÇÕES COMO: .TXT .JPEG)")
-print("[2] SUBSTITUA A DIVISÃO DE PASTAS POR '//' NO CAMINHO DO ARQUIVO PARA EVITAR ERROS")
+print("TENHA CERTEZA DE DIGITAR O CAMINHO DE DESTINO E O TIPO DE ARQUIVO CORRETAMENTE(INCLUI-SE PONTUAÇÕES COMO: .TXT .JPEG)")
 print(Style.RESET_ALL)
 
-caminho_inicio = str(input("Digite o caminho de início que o programa lerá: "))
+caminho_inicio = str(input("Digite o caminho de início que o programa lerá: ")).replace("\\", "//")
 caminho_destino = str(input("Digite o caminho de destino em que o programa trabalhará: "))
 extensao_procurada = str(input("Digite a extensão do arquivo que gostaria que o programa rastreasse: "))
 
