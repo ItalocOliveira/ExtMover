@@ -9,7 +9,7 @@ def loading(qnt, delay):
         sleep(delay)
     print("")
 
-print(Style.RESET_ALL)
+# Aviso de precaução
 print(Fore.RED)
 print(Back.BLACK + "ATENÇÃO:")
 print("TENHA CERTEZA DE DIGITAR O CAMINHO DE DESTINO E O TIPO DE ARQUIVO CORRETAMENTE(INCLUI-SE PONTUAÇÕES COMO: .TXT .JPEG .MP3...)")
